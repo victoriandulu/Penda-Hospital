@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.project.pendahospital">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PendaHospital"
+        tools:replace="android:icon,android:theme"
+        tools:targetApi="31">
+        <activity
+            android:name=".Activities.TestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.CoverActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.SuccessActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.MakeOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.AddItemsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.ProductsManagement"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.DoctorsManagement"
+            android:exported="false" />
+        <activity
+            android:name=".Patient.BookAppointmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.PasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Patient.UserActivity"
+            android:exported="false"
+            android:theme="@style/Theme.PendaHospital.NoActionBar" />
+        <activity
+            android:name=".Activities.ShoppingCartActivity"
+            android:exported="false"
+            android:theme="@style/Theme.PendaHospital.NoActionBar" />
+        <activity
+            android:name=".Patient.EconsultActivity"
+            android:exported="false"
+            android:theme="@style/Theme.PendaHospital.NoActionBar" />
+        <activity
+            android:name=".Patient.PhamarcyActivity"
+            android:exported="false"
+            android:theme="@style/Theme.PendaHospital.NoActionBar" />
+        <activity
+            android:name=".Patient.DiagnosisActivity"
+            android:exported="false"
+            android:theme="@style/Theme.PendaHospital.NoActionBar" />
+        <activity
+            android:name=".Patient.DoctorsActivity"
+            android:exported="false"
+            android:theme="@style/Theme.PendaHospital.NoActionBar" />
+        <activity
+            android:name=".Patient.InsuranceActivity"
+            android:exported="false"
+            android:theme="@style/Theme.PendaHospital.NoActionBar" />
+        <activity
+            android:name=".Patient.HospitalsActivity"
+            android:exported="false"
+            android:theme="@style/Theme.PendaHospital.NoActionBar" />
+        <activity
+            android:name=".Admin.DoctorsHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Aunthentication.SignUpActivity"
+            android:exported="false"
+            android:theme="@style/Theme.PendaHospital.NoActionBar" />
+        <activity
+            android:name=".Aunthentication.LoginActivity"
+            android:exported="false"
+            android:theme="@style/Theme.PendaHospital.NoActionBar" />
+        <activity
+            android:name=".Aunthentication.WelcomeScreenActivity"
+            android:exported="true"
+            android:theme="@style/Theme.PendaHospital.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Patient.MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.PendaHospital.NoActionBar" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
